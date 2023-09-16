@@ -37,3 +37,7 @@ SOME DATA TYPE:-
 
     object
 */
+
+const id = Symbol('12345')
+const Nid = Symbol('12345')
+console.log(id === Nid);//false
