@@ -4,8 +4,7 @@ console.log(score);//326
 const balance = new Number(121000)
 console.log(balance);//[Number: 121000]
 console.log(balance.toFixed(2));//121000.00
-
-const sbalance = balance.toString()
+const sbalance = balance.toString()//9007199254740991
 console.log(sbalance);//121000
 console.log(typeof(sbalance));//string
 
