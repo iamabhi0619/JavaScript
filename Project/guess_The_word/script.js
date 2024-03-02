@@ -56,6 +56,7 @@ btn.addEventListener('click', function(){
     }
     else{
         let inputWords = guess.value;
+        inputWords = inputWords.toLowerCase()
         if(word  === inputWords){
             // console.log("Correct..!!");
             msg.innerHTML = (`You Guess it Correct..!! <br> The Word was:- ${word}`);
@@ -67,9 +68,10 @@ btn.addEventListener('click', function(){
             score++;
             UserScore.innerHTML = `Score:- ${score}`
             UserAttemp.innerHTML = `Total Attempts:- ${attemp}`;
+            btn.innerHTML = `Go for Next Word..!!`
         }
         else{
-            msg.innerHTML = `Woosh you guess it Worng..!!<br>Try Again:- ${scramword}`;
+            msg.innerHTML = `Woosh you guess it Wrong..!!<br>Try Again:- ${scramword}`;
             guess.value = ""
             attemp++;
             UserAttemp.innerHTML = `Total Attempts:- ${attemp}`
